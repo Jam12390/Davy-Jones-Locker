@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("background.png");
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+    font-family: "Open Sans", serif;
+}
+
+.inline{
+    text-align: left;
+    clear: both;
+    float: inline-start;
+}
+
+.center-title{
+    padding: 15px 0 0 12px;
+    text-align: left;
+    font-size: 45px;
+}
+
+.center-description{
+    text-align: left;
+    padding-left: 12px;
+    font-size: 20px;
+}
+
+.card-container{
+    display: inline-block;
+}
+
+.sunken-card{
+    background: linear-gradient(140deg, rgba(16, 45, 70, 0.95), rgba(9, 25, 39, 0.95));
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    padding: 0.5px 25px 25px 25px;
+    margin: 10px;
+}
+
+.c-title{
+    font-size: 30px;
+    padding: 0 0 0 0;
+    text-decoration: underline;
+}
+
+.c-title:hover{
+    text-decoration: dotted;
+}
+
+.c-description{
+    font-size: 17.5px;
+    text-align: left;
+}
+
+#or-text{
+    padding: 7px 0 0 7px;
+    font-size: 20px;
+}
+
+#OR{
+    font-size: 25px;
+}
