@@ -32,7 +32,7 @@ body{
 .sunken-card{
     background: linear-gradient(140deg, rgba(16, 45, 70, 0.95), rgba(9, 25, 39, 0.95));
     border-radius: 10px;
-    width: 100%;
+    width: 500px;
     height: 200px;
     padding: 0.5px 25px 25px 25px;
     margin: 10px;
