@@ -26,13 +26,17 @@ body{
 }
 
 .card-container{
-    display: inline-block;
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 100vw;
 }
 
 .sunken-card{
     background: linear-gradient(140deg, rgba(16, 45, 70, 0.95), rgba(9, 25, 39, 0.95));
     border-radius: 10px;
-    width: 500px;
+    min-width: 30vw;
+    max-width: 30vw;
     height: 200px;
     padding: 0.5px 25px 25px 25px;
     margin: 10px;
@@ -42,6 +46,9 @@ body{
     font-size: 20px;
     padding: 0 0 0 0;
     text-decoration: underline;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .c-title:hover{
@@ -64,4 +71,8 @@ body{
 
 #OR{
     font-size: 25px;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, div {
+    color: #FFFFFF;
 }
