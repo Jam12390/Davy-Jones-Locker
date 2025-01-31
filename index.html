@@ -45,6 +45,26 @@
             </div>
             <div id="gradient"></div>
         </div>
+        <button onclick="openForm()" id="add-button">+</button>
+        <div class="form" id="form">
+            <div class="top-form">
+                <h3>Sink A Ship!</h3>
+                <button onclick="closeForm()" id="close-button">x</button>
+            </div>
+            <div style="height: 10px;"></div>
+            <h6 class="form-title">Enter Project Name</h6>
+            <input type="text" class="input" id="nameInput">
+            <h6 class="form-title">Enter Your Name!</h6>
+            <input type="text" class="input" id="authorInput">
+            <h6 class="form-title">Enter The Start Date</h6>
+            <input type="date" class="input" id="startInput">
+            <h6 class="form-title">Enter The End Date</h6>
+            <input type="date" class="input" id="endInput">
+            <h6 class="form-title">Enter Project Description</h6>
+            <input type="text" class="bigInput" id="descriptionInput">
+            <div style="height: 15px"></div>
+            <button onclick="sendSQLData()">Sink The Ship!</button>
+        </div>
     </body>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>

@@ -61,7 +61,6 @@ function slider(){
         transform = 2;
     }
     sliderElement.style.left = position + "px";
-    console.log(sliderElement.style.left);
     if (position+transform >= 0 || position+transform <= -1000){
         directionLeft = !directionLeft;
     }
@@ -70,7 +69,34 @@ function slider(){
     }
 }
 
-interval = setInterval(slider, 2);
+function openForm(){
+    document.getElementById("form").style.display = "block";
+}
+
+function closeForm(){
+    document.getElementById("form").style.display = "none";
+}
+
+async function sendSQLData(){
+    titleValue = document.getElementById("nameInput").value;
+    authorValue = document.getElementById("authorInput").value;
+    start = document.getElementById("startInput").value;
+    end = document.getElementById("endInput").value;
+    descriptionValue = document.getElementById("descriptionInput").value;
+    let {data, error} = await supabaseq.from("MyProjects").insert(
+        [
+            {
+                title: titleValue,
+                author: authorValue,
+                created_at: start,
+                time_it_died: end,
+                description: descriptionValue
+            }
+        ]
+    )
+}
+
+interval = setInterval(slider, 20);
 
 getMyProjects();
 getAllProjects();
